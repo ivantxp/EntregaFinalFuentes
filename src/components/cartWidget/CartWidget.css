@@ -1,0 +1,15 @@
+.img_carrito {
+    width: 40px;
+    filter: invert(100%);
+}
+.carrito_cantidad {
+    color: rgb(254, 254, 254);
+    font-size: 20px;
+    margin: 0 3px;
+    transform: translate(0, -5px);
+    height: min-content;
+}
+.contenedor_cardWidget {
+    display: flex;
+    margin: 10px;
+}

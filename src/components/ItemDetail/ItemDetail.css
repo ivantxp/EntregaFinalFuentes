@@ -1,0 +1,55 @@
+.contenedor_detalles {
+    background-color: rgb(233, 231, 231);
+    width: 100%;
+}
+.img_descricion {
+    display: flex;
+    margin: 20px;
+}
+.img_detalles {
+    width: 180px;
+    height: 300px;
+    border: solid 1px black;
+    border-radius: 10px;
+}
+
+.nombre_detalles {
+    color: black;
+    width: 100%;
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+}
+
+.icono_detalle {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+.lista_detalles {
+    display: flex;
+    align-items: center;
+    align-items: stretch;
+    width: 200px;
+    margin: 5px;
+}
+.sub_lista_detalles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.contenedor_lista_detalle {
+    display: flex;
+    flex-wrap: wrap;
+}
+.contenedor_navegacion {
+    background-color: white;
+    width: 100%;
+}
+
+.detalle_superior {
+    font-size: 17px;
+}
+.detalle_inferior {
+    font-size: 15px;
+}

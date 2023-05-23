@@ -1,0 +1,9 @@
+.contenedor_cargando {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+.puntos {
+    width: 50px;
+}

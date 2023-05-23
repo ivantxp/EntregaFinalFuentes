@@ -1,0 +1,26 @@
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulo_principal {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.786);
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding: 0;
+    line-height: 30px;
+}
+
+.desplegableIzquierdo {
+    display: flex;
+}
+header {
+    background-color: black;
+    border-bottom: solid 1px white;
+}
+.img_lupa {
+    width: 60%;
+    filter: invert(100%);
+}

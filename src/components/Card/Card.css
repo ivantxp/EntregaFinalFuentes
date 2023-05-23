@@ -1,0 +1,35 @@
+/* .conedor_carrito {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+ */
+
+.contendor_productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+    border-bottom: 2px solid rgb(28, 28, 28);
+    border-top: 2px solid rgb(28, 28, 28);
+}
+.titulo_carrito {
+    font-size: 30px;
+}
+.conedor_carrito {
+    width: 60%;
+    min-width: 320px;
+}
+
+.contendor_no_productos {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.total_carrito {
+    font-size: 30px;
+    margin: 20px 0;
+}

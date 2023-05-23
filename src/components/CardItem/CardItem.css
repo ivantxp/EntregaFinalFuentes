@@ -1,0 +1,56 @@
+.img_producto_carrito {
+    height: 90%;
+    padding: 0 auto;
+}
+
+.contenedor_item_carrito {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+    width: 280px;
+    height: 100px;
+    background-color: white;
+    box-shadow: 1px 1px 11px 0px rgba(0, 0, 0, 0.64);
+}
+
+.icono_eliminar {
+    width: 23px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.precio {
+    font-size: 12px;
+}
+.detalles_inferio {
+    display: flex;
+    align-items: center;
+}
+
+.nombre_sub_detalles {
+    font-size: 18px;
+    font-weight: bolder;
+    border-bottom: 2px solid black;
+    margin: 5px 0;
+    width: 180px;
+    height: 30px;
+    text-align: center;
+}
+
+.precio_preventa {
+    font-size: 18px;
+    align-self: center;
+    text-align: center;
+}
+
+.sub_detalles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    height: 100%;
+}
