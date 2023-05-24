@@ -5,12 +5,12 @@ const ItemList = ({ productos }) => {
     const { categoryFabricante } = useParams();
     return (
         <div>
-            <div>
-                <Link className="navegacion" to={"/"}>
+            <p className="fuente_textos">
+                <Link className="navegacion " to={"/"}>
                     {categoryFabricante ? "Inicio/" : ""}
                 </Link>
-                <span className="navegacion">{categoryFabricante}</span>
-            </div>
+                <span className="navegacion ">{categoryFabricante}</span>
+            </p>
             <div className="listado_productos">
                 {productos.map((el) => {
                     return <Item key={el.id} {...el} />;

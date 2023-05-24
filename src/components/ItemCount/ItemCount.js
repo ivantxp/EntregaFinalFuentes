@@ -10,11 +10,10 @@ const ItemCount = ({ cantidadPasada, stock, inicial, Nombre }) => {
 
     function agregar() {
         cantidad > 0 && cantidadPasada(cantidad);
-        toast(
-            <Link to={"/card"} className="fuente_textos toast_esitlo">
-                Se agrego {cantidad} {Nombre}
-            </Link>
-        );
+
+        <Link to={"/card"} className="fuente_textos toast_esitlo">
+            {toast(`Se agrego ${cantidad} ${Nombre}`)}
+        </Link>;
     }
 
     function sumar() {

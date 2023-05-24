@@ -38,11 +38,11 @@ const ItemDetail = ({
 
     return (
         <div className="contenedor_detalles">
-            <p className="contenedor_navegacion">
-                <Link className="navegacion" to={"/"}>
+            <p className="contenedor_navegacion fuente_textos">
+                <Link className="navegacion " to={"/"}>
                     Produtos/
                 </Link>
-                <Link className="navegacion" to={`/category/${Fabricante}`}>
+                <Link className="navegacion " to={`/category/${Fabricante}`}>
                     Fabricante/
                 </Link>
                 {Nombre}

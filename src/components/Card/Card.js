@@ -17,7 +17,7 @@ const Card = () => {
     } else {
         return (
             <div className="conedor_carrito">
-                <p className="contenedor_navegacion">
+                <p className="contenedor_navegacion fuente_textos">
                     <Link className="navegacion" to={"/"}>
                         Produtos/
                     </Link>

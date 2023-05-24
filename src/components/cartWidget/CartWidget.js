@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 
 const CartWidget = () => {
     const { sumaCantidadTotal } = useContext(ContextoCarrito);
-    console.log(sumaCantidadTotal() !== 0 ? sumaCantidadTotal() : " ");
     return (
         <div className="contenedor_cardWidget tipografia_Titulo">
             <Link to="/card">

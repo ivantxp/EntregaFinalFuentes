@@ -5,9 +5,6 @@ export const getProdutosColeccion = () => {
     const ruedasColeccion = collection(db, "ruedas");
     const consulta = getDocs(ruedasColeccion);
 
-    console.log(ruedasColeccion);
-    console.log(consulta);
-
     consulta.then((respuesta) => {
         console.log("funciona");
         const respuestaParseada = respuesta.docs.map((doc) => {
@@ -17,7 +14,6 @@ export const getProdutosColeccion = () => {
             };
             return producto;
         });
-        console.log(respuestaParseada);
         return respuestaParseada;
     });
 };
