@@ -47,7 +47,6 @@ const ContextoCarritoProvider = ({ children }) => {
             const copia = carrito[itemELejido].cantidad - 1;
             setSumarItem(copia);
             carrito[itemELejido].cantidad = copia;
-            console.log(carrito);
         }
         return sumarItem;
     }
