@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
 import "./Boton.css";
 
-const Boton = (props) => {
+const Boton = ({ linkId, agregadoClasse, onCLick, type, texto }) => {
     return (
-        <Link to={props.linkId !== "" ? props.linkId : "#"}>
+        <Link to={linkId !== "" ? linkId : "#"}>
             <button
-                className={"boton " + props.agregadoClasse}
-                onClick={props.onCLick !== "" ? props.onCLick : null}
-                type={props.type !== "" ? props.type : null}>
-                {props.texto}
+                className={"boton " + agregadoClasse}
+                onClick={onCLick !== "" ? onCLick : null}
+                type={type !== "" ? type : null}>
+                {texto}
             </button>
         </Link>
     );
