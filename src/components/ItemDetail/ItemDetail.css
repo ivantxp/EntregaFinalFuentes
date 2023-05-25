@@ -1,5 +1,5 @@
 .contenedor_detalles {
-    background-color: aqua;
+    background-color: rgb(170, 255, 0);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,22 +51,19 @@
     line-height: 0.75;
     background-color: red;
 }
-.nombre_detalles {
-    font-size: 40px;
-    background-color: red;
-    width: 100%;
-}
+
 .sub_lista_detalles {
+    font-size: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
 .nombre_detalles {
+    font-size: 40px;
+    text-align: center;
     color: black;
     width: 100%;
-    font-size: 30px;
-    font-family: "Roboto", sans-serif;
 }
 
 .icono_detalle {
@@ -78,19 +75,23 @@
 .lista_detalles {
     display: flex;
     align-items: center;
-    align-items: stretch;
-    width: 200px;
-    margin: 5px;
+    width: 180px;
+    margin: 3px;
 }
 
 .contenedor_lista_detalle {
     display: flex;
+    flex-direction: center;
+    justify-content: center;
+
     flex-wrap: wrap;
     z-index: 88888;
+    width: 550px;
     background-color: aqua;
 }
 .detalle_superior {
-    font-size: 17px;
+    font-size: 15px;
+    font-weight: bold;
 }
 .detalle_inferior {
     font-size: 15px;
