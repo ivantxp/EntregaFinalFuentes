@@ -73,3 +73,7 @@
     background-color: rgb(0, 234, 27);
     border: 1px solid transparent;
 }
+.contenedor_botones_card {
+    display: flex;
+    align-items: center;
+}

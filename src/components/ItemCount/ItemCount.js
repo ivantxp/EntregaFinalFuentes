@@ -25,19 +25,17 @@ const ItemCount = ({ cantidadPasada, stock, inicial, Nombre }) => {
 
     return (
         <div className="contenedor_botones_card ">
+            <Boton
+                texto={"agregar"}
+                agregadoClasse={"boton_agregar fuente_textos"}
+                linkId={""}
+                onClick={agregar}
+            />
             <BotonesRestarSumar
                 accionRestar={restar}
                 accionSumar={sumar}
                 cantidad={cantidad}
             />
-            <div className="div_botones">
-                <Boton
-                    texto={"agregar"}
-                    agregadoClasse={"boton_agregar fuente_textos"}
-                    linkId={""}
-                    onCLick={agregar}
-                />
-            </div>
         </div>
     );
 };

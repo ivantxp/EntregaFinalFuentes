@@ -13,6 +13,7 @@ El proyecto Totaleuc E-commerce ha sido desarrollado utilizando las siguientes t
 -   **Firebase**: Una plataforma de desarrollo de aplicaciones web que proporciona servicios en la nube como hosting, autenticación, base de datos y almacenamiento.
 -   **React Router DOM**: Una biblioteca de enrutamiento utilizada para gestionar las rutas de la aplicación React.
 -   **React Toastify**: Una biblioteca que permite mostrar notificaciones de manera sencilla en una aplicación React.
+-   **react circular progressbar** componente de barra de progreso circular, construido con SVG y ampliamente personalizable.
 
 ## Requisitos previos
 
@@ -62,7 +63,7 @@ Este comando generará una carpeta `build` con los archivos estáticos de la apl
 
 ## Soporte adicional
 
-Si necesitas más información o tienes problemas con el proyecto Totaleuc E-commerce, puedes consultar la documentación adicional en la [documentación oficial de Create React App](https://create-react-app.dev/) y en la documentación de las bibliotecas utilizadas, como [React Router DOM](https://reactrouter.com/) y [React Toastify](https://fkhadra.github.io/react-toastify/).
+Si necesitas más información o tienes problemas con el proyecto Totaleuc E-commerce, puedes consultar la documentación adicional en la [documentación oficial de Create React App](https://create-react-app.dev/) y en la documentación de las bibliotecas utilizadas, como [React Router DOM](https://reactrouter.com/), [React Toastify](https://fkhadra.github.io/react-toastify/). [react circular progressbar](https://www.npmjs.com/package/react-circular-progressbar)
 
 ## Navegación
 

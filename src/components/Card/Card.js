@@ -47,7 +47,7 @@ const Card = () => {
                                     "boton_generico  boton_carrito_check fuente_textos"
                                 }
                                 linkId={"/CheckOut"}
-                                onCLick={""}
+                                onClick={""}
                             />
                             <Boton
                                 texto={"limpiar"}
@@ -55,7 +55,7 @@ const Card = () => {
                                     "boton_generico boton_carrito_limpiar fuente_textos"
                                 }
                                 linkId={""}
-                                onCLick={limpiarCarrito}
+                                onClick={limpiarCarrito}
                             />
                         </div>
                     </div>
