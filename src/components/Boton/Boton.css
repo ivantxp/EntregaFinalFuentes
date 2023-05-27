@@ -80,10 +80,17 @@
     align-items: center;
 }
 .boton_mas_detalles {
-    margin: 10px;
+    margin: 10px 0 0 0;
     cursor: pointer;
     padding: 5px 10px;
     border-radius: 10px;
     background-color: rgb(189, 189, 189);
     border: 1px solid transparent;
+}
+.boton_cerrar {
+    color: white;
+    font-size: 40px;
+    border: 1px solid transparent;
+    background-color: transparent;
+    cursor: pointer;
 }

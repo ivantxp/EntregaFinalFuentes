@@ -100,14 +100,14 @@ const ItemDetail = ({
                                             trailColor: "rgb(56, 56, 56)",
                                         })}
                                     />
-                                    <p className="fuente_textos">Puntuacion</p>
+                                    <p className="fuente_textos">Puntuación</p>
                                 </div>
                             </div>
                         ) : (
                             <div className="detalles_item">
                                 <div className="ver_menos">
                                     <Boton
-                                        agregadoClasse={"x"}
+                                        agregadoClasse={"boton_cerrar X"}
                                         texto={"x"}
                                         onClick={masDetalles}
                                     />
@@ -155,7 +155,7 @@ const ItemDetail = ({
                                                 {Autonomía_real}
                                             </p>
                                             <p className="detalle_inferior">
-                                                Autonomia real
+                                                Autonomía real
                                             </p>
                                         </div>
                                     </li>
@@ -170,7 +170,7 @@ const ItemDetail = ({
                                                 {Suspensión}
                                             </p>
                                             <p className="detalle_inferior">
-                                                Suspencion
+                                                Suspensión
                                             </p>
                                         </div>
                                     </li>
@@ -231,7 +231,7 @@ const ItemDetail = ({
                                                 {Batería}
                                             </p>
                                             <p className="detalle_inferior">
-                                                Bateria
+                                                Batería
                                             </p>
                                         </div>
                                     </li>
