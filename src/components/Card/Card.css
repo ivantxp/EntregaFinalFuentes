@@ -1,10 +1,3 @@
-/* .conedor_carrito {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
- */
-
 .contendor_productos {
     display: flex;
     flex-wrap: wrap;
