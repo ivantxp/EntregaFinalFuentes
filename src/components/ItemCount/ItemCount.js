@@ -32,7 +32,7 @@ const ItemCount = ({
     return (
         <div className="contenedor_botones_card ">
             <Boton
-                texto={"agregar"}
+                texto={"Agregar"}
                 agregadoClasse={"boton_agregar fuente_textos"}
                 linkId={""}
                 onClick={agregar}

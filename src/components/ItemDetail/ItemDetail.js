@@ -81,7 +81,7 @@ const ItemDetail = ({
                                 <div className="texto_descricion fuente_textos">
                                     <p>{Descripción}</p>
                                     <Boton
-                                        texto={"Mas Detalles"}
+                                        texto={"Más Detalles"}
                                         onClick={masDetalles}
                                         agregadoClasse={
                                             "boton_mas_detalles fuente_textos"

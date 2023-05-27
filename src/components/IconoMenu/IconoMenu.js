@@ -8,7 +8,7 @@ const IconoMenu = (props) => {
                 <span></span>
                 <span></span>
             </div>
-            <p className="menu_text">Menu</p>
+            <p className="menu_text">Menú</p>
         </label>
     );
 };

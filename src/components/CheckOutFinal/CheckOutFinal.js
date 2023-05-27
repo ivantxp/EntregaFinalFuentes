@@ -12,11 +12,11 @@ const CheckOutFinal = ({ id, usuario }) => {
                     El numero de su orden es: <span>{id}</span>
                 </p>
                 <p>
-                    Resivira una copia de su orden al email :{" "}
+                    Recibirá una copia de su orden al email :{" "}
                     <span>{usuario.email}</span>
                 </p>
                 <p>
-                    En breve nos contataremos usted al{" "}
+                    En breve nos concactaremos con usted al{" "}
                     <span>{usuario.cel}</span>
                 </p>
             </div>
