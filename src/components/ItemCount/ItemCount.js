@@ -5,7 +5,13 @@ import Boton from "../Boton/Boton";
 import BotonesRestarSumar from "../BotonesRestarSumar/BotonesRestarSumar";
 import { Link } from "react-router-dom";
 
-const ItemCount = ({ cantidadPasada, stock, inicial, Nombre }) => {
+const ItemCount = ({
+    cantidadPasada,
+    stock,
+    inicial,
+    Nombre,
+    cantidadParaPrecio,
+}) => {
     const [cantidad, setCantidad] = useState(inicial);
 
     function agregar() {
@@ -22,7 +28,7 @@ const ItemCount = ({ cantidadPasada, stock, inicial, Nombre }) => {
     function restar() {
         cantidad > 0 && setCantidad(cantidad - 1);
     }
-
+    cantidadParaPrecio(cantidad);
     return (
         <div className="contenedor_botones_card ">
             <Boton

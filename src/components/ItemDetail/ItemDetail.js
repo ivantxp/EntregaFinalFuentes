@@ -28,22 +28,23 @@ const ItemDetail = ({
     Tamaño,
     Equipo_de_sonido,
     Tiempo_de_carga_de_fábrica,
+    Descripción,
 }) => {
     const [agregado, setAgregado] = useState(0);
     const [masDetallesCambio, SetMasDetallesCambio] = useState(false);
-    const [cantidadPrecio, setCantidadPrecio] = useState(Precio);
+    const [cantidadParaPrecio, setCantidadParaPrecio] = useState(1 * Precio);
     const { agregarCarrito } = useContext(ContextoCarrito);
     function masDetalles() {
         SetMasDetallesCambio(!masDetallesCambio);
         console.log(masDetallesCambio);
     }
+
     function cantidad(cantidad) {
         setAgregado(cantidad);
         const item = { id, Nombre, Precio, Stock, Img, Fabricante };
         agregarCarrito(item, cantidad);
-        setCantidadPrecio(cantidad * Precio);
     }
-    console.log(cantidadPrecio);
+    console.log(cantidadParaPrecio);
     return (
         <div className="">
             <p className="contenedor_navegacion fuente_textos">
@@ -71,16 +72,22 @@ const ItemDetail = ({
                             <h3 className=" tipografia_Titulo">
                                 {Fabricante} {Nombre}
                             </h3>
-                            <p className="fuente_textos">Є{cantidadPrecio}</p>
+                            <p className="fuente_textos">
+                                Є{cantidadParaPrecio * Precio}
+                            </p>
                         </div>
-
                         {masDetallesCambio === false ? (
                             <div className="pre_detalle">
-                                <Boton
-                                    texto={"Mas Detalles"}
-                                    onClick={masDetalles}
-                                />
-
+                                <div className="texto_descricion fuente_textos">
+                                    <p>{Descripción}</p>
+                                    <Boton
+                                        texto={"Mas Detalles"}
+                                        onClick={masDetalles}
+                                        agregadoClasse={
+                                            "boton_mas_detalles fuente_textos"
+                                        }
+                                    />
+                                </div>
                                 <div
                                     className="porsentaje_puntuacion fuente_textos"
                                     label="Puntuacion">
@@ -296,18 +303,18 @@ const ItemDetail = ({
 
                         <div className="botones_detalle">
                             {agregado > 0 ? (
-                                <div>
+                                <div className="">
                                     <Boton
                                         texto={"Terminar compra"}
                                         agregadoClasse={
-                                            "boton_agregar fuente_textos"
+                                            "boton_agregar fuente_textos botones_ya_agregados"
                                         }
                                         linkId={"/card"}
                                     />
                                     <Boton
                                         texto={"Continuar comprando"}
                                         agregadoClasse={
-                                            "boton_agregar fuente_textos"
+                                            "boton_agregar fuente_textos botones_ya_agregados"
                                         }
                                         linkId={"/"}
                                     />
@@ -320,6 +327,7 @@ const ItemDetail = ({
                                     Fabricante={Fabricante}
                                     cantidadPasada={cantidad}
                                     linkId={""}
+                                    cantidadParaPrecio={setCantidadParaPrecio}
                                 />
                             )}
                         </div>
