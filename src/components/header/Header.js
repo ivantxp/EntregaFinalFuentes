@@ -27,7 +27,7 @@ const Header = (props) => {
                     <NavLink
                         className="titulo_principal tipografia_Titulo"
                         to={"/"}>
-                        <h1>TOTAL E.U.C.</h1>
+                        <h1>TOTAL EUC</h1>
                     </NavLink>
                 </li>
                 <CartWidget />
