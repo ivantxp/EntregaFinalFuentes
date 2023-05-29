@@ -5,7 +5,7 @@ const ItemList = ({ productos }) => {
     const { categoryFabricante } = useParams();
     return (
         <div>
-            <p className="fuente_textos">
+            <p className="contenedor_navegacion fuente_textos">
                 <Link className="navegacion " to={"/"}>
                     {categoryFabricante ? "Inicio/" : ""}
                 </Link>

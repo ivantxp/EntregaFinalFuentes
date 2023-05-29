@@ -5,6 +5,7 @@
     border: 1px solid transparent;
     border-radius: 20px;
     cursor: pointer;
+    margin: 0 20px 0 0;
 }
 .boton_agregar:hover {
     background-color: rgb(255, 189, 189);
@@ -77,6 +78,7 @@
 }
 .contenedor_botones_card {
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 .boton_mas_detalles {

@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ContextoCarrito } from "../Context/ContextoCarrito";
+import { ContextoCarrito } from "../../Context/ContextoCarrito";
 import "./CardItem.css";
 import BotonesRestarSumar from "../BotonesRestarSumar/BotonesRestarSumar";
 const CardItem = ({ Nombre, Precio, id, cantidad, Fabricante, Stock, Img }) => {

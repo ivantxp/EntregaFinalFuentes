@@ -17,7 +17,8 @@
     display: flex;
 }
 header {
-    background-color: black;
+    height: 22vh;
+    background-color: rgb(23, 23, 23);
     border-bottom: solid 1px white;
 }
 .img_lupa {

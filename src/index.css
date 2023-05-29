@@ -21,3 +21,9 @@
     color: white;
     text-decoration: none;
 }
+
+.contenedor_navegacion {
+    height: 30px;
+    display: flex;
+    align-items: center;
+}

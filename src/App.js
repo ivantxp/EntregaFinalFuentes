@@ -4,9 +4,10 @@ import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HeaderContainer from "./components/HeaderContainer/HeaderContainer";
-import ContextoCarritoProvider from "./components/Context/ContextoCarrito";
+import ContextoCarritoProvider from "./Context/ContextoCarrito";
 import Card from "./components/Card/Card";
 import CheckOut from "./components/ChckOut/CheckOut";
+import Footer from "./components/Footer/Footer";
 
 function App() {
     return (
@@ -30,6 +31,7 @@ function App() {
                             <Route path="*" element={<h1>Error 404</h1>} />
                         </Routes>
                     </Main>
+                    <Footer />
                 </ContextoCarritoProvider>
             </BrowserRouter>
         </div>

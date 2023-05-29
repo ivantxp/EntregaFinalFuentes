@@ -2,7 +2,7 @@ import { addDoc, collection } from "firebase/firestore";
 import CheckOutForm from "../CheckOutForm/CheckOutForm";
 import { db } from "../../services/fireBase/firebase";
 import { useContext, useState } from "react";
-import { ContextoCarrito } from "../Context/ContextoCarrito";
+import { ContextoCarrito } from "../../Context/ContextoCarrito";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import CargandoContainer from "../CargandoContainer/CargandoContainer";

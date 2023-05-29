@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "./ItemDetail.css";
 import ItemCount from "../ItemCount/ItemCount";
 import { useContext, useState } from "react";
-import { ContextoCarrito } from "../Context/ContextoCarrito";
+import { ContextoCarrito } from "../../Context/ContextoCarrito";
 import { ToastContainer } from "react-toastify";
 import Boton from "../Boton/Boton";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
@@ -44,9 +44,8 @@ const ItemDetail = ({
         const item = { id, Nombre, Precio, Stock, Img, Fabricante };
         agregarCarrito(item, cantidad);
     }
-    console.log(cantidadParaPrecio);
     return (
-        <div className="">
+        <div>
             <p className="contenedor_navegacion fuente_textos">
                 <Link className="navegacion " to={"/"}>
                     Produtos/
@@ -303,20 +302,20 @@ const ItemDetail = ({
 
                         <div className="botones_detalle">
                             {agregado > 0 ? (
-                                <div className="">
-                                    <Boton
-                                        texto={"Terminar compra"}
-                                        agregadoClasse={
-                                            "boton_agregar fuente_textos botones_ya_agregados"
-                                        }
-                                        linkId={"/card"}
-                                    />
+                                <div>
                                     <Boton
                                         texto={"Continuar comprando"}
                                         agregadoClasse={
                                             "boton_agregar fuente_textos botones_ya_agregados"
                                         }
                                         linkId={"/"}
+                                    />
+                                    <Boton
+                                        texto={"Terminar compra"}
+                                        agregadoClasse={
+                                            "boton_agregar fuente_textos botones_ya_agregados"
+                                        }
+                                        linkId={"/card"}
                                     />
                                 </div>
                             ) : (
