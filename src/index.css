@@ -23,7 +23,8 @@
 }
 
 .contenedor_navegacion {
-    height: 30px;
+    height: 35px;
+    width: 100%;
     display: flex;
     align-items: center;
 }

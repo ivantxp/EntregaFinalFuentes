@@ -284,7 +284,7 @@ const ItemDetail = ({
                                     <li className="lista_detalles">
                                         <img
                                             className="icono_detalle"
-                                            src="../../../iconos_descricion/Tamaño.png"
+                                            src="../../../iconos_descricion/tamaño.png"
                                             alt="icono fabricante"
                                         />
                                         <div className="sub_lista_detalles">
@@ -344,7 +344,7 @@ const ItemDetail = ({
                 pauseOnFocusLoss
                 draggable
                 pauseOnHover
-                theme="dark"
+                theme="light"
             />
         </div>
     );
