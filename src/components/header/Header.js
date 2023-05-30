@@ -2,7 +2,7 @@ import "./Header.css";
 import CartWidget from "../cartWidget/CartWidget";
 import { NavLink } from "react-router-dom";
 import NavBar from "../NavBar/NavBar";
-const Header = (props) => {
+const Header = () => {
     return (
         <header>
             <div className="encabezado">

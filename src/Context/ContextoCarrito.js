@@ -1,4 +1,5 @@
 import { createContext, useState } from "react";
+import { toast } from "react-toastify";
 
 export const ContextoCarrito = createContext({ carrito: [] });
 
@@ -14,7 +15,7 @@ const ContextoCarritoProvider = ({ children }) => {
         if (!yaAgregado(item.id)) {
             setCarrito((copia) => [...copia, { ...item, cantidad }]);
         } else {
-            console.log("producto ya existente");
+            toast("producto ya existentes actualizo cantidad");
             const copia = carrito.slice();
             const indice = carrito.findIndex((el) => el.id === item.id);
             const catidadAnterior = carrito[indice].cantidad;

@@ -20,7 +20,6 @@ const CheckOutForm = ({ finalizar }) => {
         for (let i = 0; i < aValidar.length; i++) {
             if (isNaN(aValidar[i]) === false) {
                 alerta("No puede ingresar numeros en nombre o apelldio");
-                console.log("No puede ingresar numeros en nombre o apelldio");
                 esValido = false;
                 break;
             }

@@ -46,8 +46,6 @@ const CheckOut = () => {
             SetOrdenId(copia);
             limpiar();
         } catch (error) {
-            console.log("Error");
-            console.log(error);
             toast("Error de carga de");
         } finally {
             setCargando(false);

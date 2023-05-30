@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import CargandoContainer from "../CargandoContainer/CargandoContainer";
 import { getDoc, doc } from "firebase/firestore";
 import { db } from "../../services/fireBase/firebase";
+import { toast } from "react-toastify";
 
 const ItemDetailContainer = () => {
     const [productosIndividual, setproductosIndividual] = useState();
@@ -23,7 +24,7 @@ const ItemDetailContainer = () => {
                 setproductosIndividual(respuestaParseada);
             })
             .catch((rejet) => {
-                console.log("error");
+                toast("Error de carga,intente de nuevo");
             })
             .finally(() => setCargando(false));
     }, [itemId]);

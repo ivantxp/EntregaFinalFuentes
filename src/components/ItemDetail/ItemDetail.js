@@ -36,7 +36,6 @@ const ItemDetail = ({
     const { agregarCarrito } = useContext(ContextoCarrito);
     function masDetalles() {
         SetMasDetallesCambio(!masDetallesCambio);
-        console.log(masDetallesCambio);
     }
 
     function cantidad(cantidad) {
